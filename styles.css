@@ -1,0 +1,95 @@
+body {
+  font-family: 'Inter', sans-serif;
+  background-color: #f6f8f6;
+  color: #5d4037;
+}
+.brand-deep-green { color: #102216; }
+.brand-earth-brown { color: #5d4037; }
+.brand-olive-green { color: #61896f; }
+.brand-soft-gold { background-color: #c5a47e; color: #102216; }
+
+.floating-whatsapp {
+  position: fixed;
+  bottom: 1.5rem;
+  right: 1.5rem;
+  background-color: #25D366;
+  color: #fff;
+  border-radius: 50%;
+  width: 3.5rem;
+  height: 3.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.3);
+  transition: background 0.3s;
+  z-index: 1000;
+}
+.floating-whatsapp:hover {
+  background-color: #128C7E;
+  color: #fff;
+}
+
+/* ensure image fits inside the round WhatsApp button */
+.floating-whatsapp .whatsapp-img {
+  width: 1.6rem;
+  height: 1.6rem;
+  object-fit: contain;
+  display: block;
+}
+
+/* optional: show icon font instead of image on very small screens
+   (comment out if you always want the image) */
+/*
+.floating-whatsapp i.bi {
+  display: none;
+}
+*/
+
+.primary { background-color: #4CAF50; color: white; }
+.primary:hover { background-color: #45a049; }
+.secondary { background-color: #8D6E63; color: white; }
+.accent { color: #FFC107; }
+.bg-light-custom { background-color: #F5F5F2; }
+.bg-dark-custom { background-color: #1B262C; color: #E0E0E0; }
+.material-symbols-outlined { font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24; }
+.card-hover:hover { transform: scale(1.05); transition: 0.3s; }
+/* mobile carousel pop animation */
+@keyframes pop {
+  0% { transform: scale(0.96); opacity: 0.98; }
+  50% { transform: scale(1.06); opacity: 1; }
+  100% { transform: scale(1); opacity: 1; }
+}
+
+.mobile-carousel .carousel-inner {
+  padding: 0.5rem 0;
+}
+
+.mobile-carousel .card {
+  border-radius: 0.6rem;
+  overflow: hidden;
+  transition: transform 300ms ease, box-shadow 300ms ease;
+  box-shadow: 0 6px 18px rgba(16,34,22,0.08);
+}
+
+/* class toggled by JS to trigger pop */
+.card-pop {
+  animation: pop 360ms cubic-bezier(.2,.9,.2,1);
+  will-change: transform;
+}
+
+/* slightly smaller default so pop feels more visible */
+.mobile-carousel .card { transform: scale(0.99); }
+
+/* remove default carousel inner overflow cut on small cards */
+.mobile-carousel .carousel-item { display: flex; justify-content: center; align-items: center; }
+/* reduce product card image size on mobile */
+@media (max-width: 767.98px) {
+  .mobile-carousel .card {
+    max-width: 340px;
+  }
+  .mobile-carousel .card-img-top {
+    height: 180px;
+    object-fit: cover;
+    width: 100%;
+  }
+}
