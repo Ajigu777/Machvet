@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MACHVET Homepage</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons (needed for other icons) -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css" rel="stylesheet">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="bg-light-custom">
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-light bg-light shadow-sm sticky-top">
+  <div class="container">
+    <a class="navbar-brand d-flex align-items-center" href="index.html" aria-label="MACHVET home">
+      <img src="Images/logo.jpg" alt="MACHVET logo" class="navbar-logo me-2">
+      <span class="fw-bold fs-4 mb-0">MACHVET</span>
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+      <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+        <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="#products">Products</a></li>
+        <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
+        <li class="nav-item"><a class="nav-link" href="about us.html">About Us</a></li>
+        <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+      </ul>
+      <a href="#products" class="btn primary">Shop Now</a>
+    </div>
+  </div>
+</nav>
+
+<!-- Hero Section -->
+<section id="home" class="hero-section text-center text-white" style="background: linear-gradient(to top, rgba(141,110,99,0.7), rgba(76,175,80,0.5)), url('Images/Front hero.jpg');">
+  <div class="container hero-inner py-5">
+    <h1 class="display-4 fw-bold">MACHVET – Your Trusted Agro & Veterinary Partner</h1>
+    <p class="lead">Providing comprehensive and reliable solutions for your farm and animal's health and productivity.</p>
+    <div class="mt-3">
+      <a href="#products" class="btn primary me-2">Shop Products</a>
+      <a href="#contact" class="btn btn-light text-dark">Book Appointment</a>
+    </div>
+  </div>
+</section>
+
+<!-- Core Services -->
+<section id="services" class="py-5">
+  <div class="container text-center">
+    <h2 class="fw-bold mb-4">Our Core Services</h2>
+    <div class="row g-4 justify-content-center">
+      <div class="col-md-4">
+        <div class="card p-3 shadow card-hover h-100">
+          <div class="bg-primary bg-opacity-25 rounded-circle p-3 mb-3 d-inline-block">
+            <span class="material-symbols-outlined fs-2 accent">vaccines</span>
+          </div>
+          <h5 class="fw-bold">Veterinary Medicines</h5>
+          <p>A wide range of medicines for livestock and pets.</p>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="card p-3 shadow card-hover h-100">
+          <div class="bg-primary bg-opacity-25 rounded-circle p-3 mb-3 d-inline-block">
+            <span class="material-symbols-outlined fs-2 accent">pets</span>
+          </div>
+          <h5 class="fw-bold">Animal Supplements</h5>
+          <p>Nutritious feeds to ensure animal health and performance.</p>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="card p-3 shadow card-hover h-100">
+          <div class="bg-primary bg-opacity-25 rounded-circle p-3 mb-3 d-inline-block">
+            <span class="material-symbols-outlined fs-2 accent">support_agent</span>
+          </div>
+          <h5 class="fw-bold">Farm Consultation</h5>
+          <p>Expert advice to optimize your farm's productivity.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Featured Products -->
+<section id="products" class="py-5 bg-light-custom">
+  <div class="container text-center">
+    <h2 class="fw-bold mb-4">Explore Our Featured Products</h2>
+
+    <!-- Desktop: Carousel slider (shown on md and up) -->
+    <div id="productsCarousel" class="carousel slide d-none d-md-block" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <!-- Slide 1 -->
+        <div class="carousel-item active">
+          <div class="row g-4 justify-content-center">
+            <div class="col-md-4">
+              <div class="card card-hover h-100">
+                <img src="Images/product one.jpg" class="card-img-top" alt="Product 1">
+                <div class="card-body">
+                  <h5 class="card-title">Egg Booster Feed</h5>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-4">
+              <div class="card card-hover h-100">
+                <img src="Images/product two.jpg" class="card-img-top" alt="Product 2">
+                <div class="card-body">
+                  <h5 class="card-title">Vitamin Supplement</h5>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-4">
+              <div class="card card-hover h-100">
+                <img src="Images/product three.jpg" class="card-img-top" alt="Product 3">
+                <div class="card-body">
+                  <h5 class="card-title">PoxRid</h5>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Slide 2 -->
+        <div class="carousel-item">
+          <div class="row g-4 justify-content-center">
+            <div class="col-md-4">
+              <div class="card card-hover h-100">
+                <img src="Images/product four.jpg" class="card-img-top" alt="Product 4">
+                <div class="card-body">
+                  <h5 class="card-title">Machcoxcine</h5>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-4">
+              <div class="card card-hover h-100">
+                <img src="Images/product five.jpg" class="card-img-top" alt="Product 5">
+                <div class="card-body">
+                  <h5 class="card-title">Aqual-Cure<h5>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-4">
+              <div class="card card-hover h-100">
+                <img src="Images/product six.jpg" class="card-img-top" alt="Product 6">
+                <div class="card-body">
+                  <h5 class="card-title">N-FuralCurecin</h5>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Slide 3 (now with two items) -->
+        <div class="carousel-item">
+          <div class="row g-4 justify-content-center">
+            <div class="col-md-4">
+              <div class="card card-hover h-100">
+                <img src="Images/product seven.jpg" class="card-img-top" alt="Product 7">
+                <div class="card-body">
+                  <h5 class="card-title">Quick Grow</h5>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-4">
+              <div class="card card-hover h-100">
+                <img src="Images/product eight.jpg" class="card-img-top" alt="Product 8">
+                <div class="card-body">
+                  <h5 class="card-title">Macdox-Fort</h5>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Controls -->
+      <button class="carousel-control-prev" type="button" data-bs-target="#productsCarousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#productsCarousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+
+    <!-- Mobile: standard carousel (shown below md) -->
+    <div id="mobileProductsCarousel" class="carousel slide d-md-none" data-bs-ride="carousel" data-bs-interval="3000" aria-label="Mobile product carousel">
+      <!-- indicators -->
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#mobileProductsCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#mobileProductsCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#mobileProductsCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        <button type="button" data-bs-target="#mobileProductsCarousel" data-bs-slide-to="3" aria-label="Slide 4"></button>
+        <button type="button" data-bs-target="#mobileProductsCarousel" data-bs-slide-to="4" aria-label="Slide 5"></button>
+        <button type="button" data-bs-target="#mobileProductsCarousel" data-bs-slide-to="5" aria-label="Slide 6"></button>
+        <button type="button" data-bs-target="#mobileProductsCarousel" data-bs-slide-to="6" aria-label="Slide 7"></button>
+        <button type="button" data-bs-target="#mobileProductsCarousel" data-bs-slide-to="7" aria-label="Slide 8"></button>
+      </div>
+
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <div class="card card-hover mx-3 mx-sm-0">
+            <img src="Images/product one.jpg" class="card-img-top" alt="Product 1">
+            <div class="card-body"><h5 class="card-title">Growth Booster Feed</h5></div>
+          </div>
+        </div>
+
+        <div class="carousel-item">
+          <div class="card card-hover mx-3 mx-sm-0">
+            <img src="Images/product two.jpg" class="card-img-top" alt="Product 2">
+            <div class="card-body"><h5 class="card-title">Protein-Rich Feed</h5></div>
+          </div>
+        </div>
+
+        <div class="carousel-item">
+          <div class="card card-hover mx-3 mx-sm-0">
+            <img src="Images/product three.jpg" class="card-img-top" alt="Product 3">
+            <div class="card-body"><h5 class="card-title">Vitamin Supplement</h5></div>
+          </div>
+        </div>
+
+        <div class="carousel-item">
+          <div class="card card-hover mx-3 mx-sm-0">
+            <img src="Images/product four.jpg" class="card-img-top" alt="Product 4">
+            <div class="card-body"><h5 class="card-title">Dewormer Pack</h5></div>
+          </div>
+        </div>
+
+        <div class="carousel-item">
+          <div class="card card-hover mx-3 mx-sm-0">
+            <img src="Images/product five.jpg" class="card-img-top" alt="Product 5">
+            <div class="card-body"><h5 class="card-title">Hydration Electrolytes</h5></div>
+          </div>
+        </div>
+
+        <div class="carousel-item">
+          <div class="card card-hover mx-3 mx-sm-0">
+            <img src="Images/product six.jpg" class="card-img-top" alt="Product 6">
+            <div class="card-body"><h5 class="card-title">Mineral Mix</h5></div>
+          </div>
+        </div>
+
+        <div class="carousel-item">
+          <div class="card card-hover mx-3 mx-sm-0">
+            <img src="Images/product seven.jpg" class="card-img-top" alt="Product 7">
+            <div class="card-body"><h5 class="card-title">Immune Booster</h5></div>
+          </div>
+        </div>
+
+        <div class="carousel-item">
+          <div class="card card-hover mx-3 mx-sm-0">
+            <img src="Images/product eight.jpg" class="card-img-top" alt="Product 8">
+            <div class="card-body"><h5 class="card-title">Flock Conditioner</h5></div>
+          </div>
+        </div>
+      </div>
+
+      <button class="carousel-control-prev" type="button" data-bs-target="#mobileProductsCarousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#mobileProductsCarousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+
+  </div>
+</section>
+
+<!-- Booking Form -->
+<section id="contact" class="py-5">
+  <div class="container">
+    <div class="card shadow p-4">
+      <h2 class="text-center fw-bold mb-4">Book an Appointment Today</h2>
+      <form class="row g-3">
+        <div class="col-md-6">
+          <label class="form-label">Name</label>
+          <input type="text" class="form-control" name="name">
+        </div>
+        <div class="col-md-6">
+          <label class="form-label">Phone</label>
+          <input type="tel" class="form-control" name="phone">
+        </div>
+        <div class="col-md-6">
+          <label class="form-label">Service Type</label>
+          <select class="form-select" name="service">
+            <option>Farm Consultation</option>
+            <option>Veterinary Diagnostics</option>
+            <option>Animal Vaccination</option>
+            <option>General Check-up</option>
+            <option>Product Purchase</option>
+          </select>
+        </div>
+        <div class="col-md-6">
+          <label class="form-label">Location</label>
+          <input type="text" class="form-control" name="location">
+        </div>
+        <div class="col-12">
+          <label class="form-label">Preferred Date</label>
+          <input type="date" class="form-control" name="date">
+        </div>
+        <div class="col-12 text-center mt-3">
+          <button type="submit" class="btn primary px-5">Submit Booking</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="bg-primary text-white py-5">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-3">
+        <h5>About</h5>
+        <p>MACHVET supports farm and animal health through high-quality products and expert services.</p>
+      </div>
+      <div class="col-md-3">
+        <h5>Quick Links</h5>
+        <ul class="list-unstyled">
+          <li><a class="text-white text-decoration-none" href="#">Products</a></li>
+          <li><a class="text-white text-decoration-none" href="#">Services</a></li>
+          <li><a class="text-white text-decoration-none" href="#">Blog</a></li>
+          <li><a class="text-white text-decoration-none" href="#">Contact</a></li>
+        </ul>
+      </div>
+      <div class="col-md-3">
+        <h5>Services</h5>
+        <ul class="list-unstyled">
+          <li><a class="text-white text-decoration-none" href="#">Veterinary Medicines</a></li>
+          <li><a class="text-white text-decoration-none" href="#">Farm Consultation</a></li>
+        </ul>
+      </div>
+      <div class="col-md-3">
+        <h5>Location</h5>
+        <p class="mb-0">11 Akinboyekun close, off Obiodun Olofin Road, Blueview Garden Estate, Matogun Road, Ola-aro</p>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- Floating WhatsApp -->
+<a href="https://wa.me/234803455312" target="_blank" rel="noopener" class="floating-whatsapp" aria-label="Chat on WhatsApp">
+  <!-- image fallback — put Images/whatsapp.png in your Images folder -->
+  <img src="Images/whatsapp.png" alt="WhatsApp" class="whatsapp-img">
+</a>
+
+<!-- load page scripts (includes bootstrap bundle + carousel behavior) -->
+<script src="script.js"></script>
+</body>
+</html>
