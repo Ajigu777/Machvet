@@ -1,0 +1,146 @@
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #f6f8f6;
+    color: #5d4037;
+}
+.brand-deep-green { color: #102216; }
+.brand-earth-brown { color: #5d4037; }
+.brand-olive-green { color: #61896f; }
+.brand-soft-gold { background-color: #c5a47e; color: #102216; }
+
+.floating-whatsapp {
+    position: fixed;
+    bottom: 1.5rem;
+    right: 1.5rem;
+    background-color: #25D366;
+    color: #fff;
+    border-radius: 50%;
+    width: 3.5rem;
+    height: 3.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.3);
+    transition: background 0.3s;
+    z-index: 1000;
+}
+.floating-whatsapp:hover {
+    background-color: #128C7E;
+    color: #fff;
+}
+
+/* ensure image fits inside the round WhatsApp button */
+.floating-whatsapp .whatsapp-img {
+    width: 1.6rem;
+    height: 1.6rem;
+    object-fit: contain;
+    display: block;
+}
+
+.primary { background-color: #4CAF50; color: white; }
+.primary:hover { background-color: #45a049; }
+.secondary { background-color: #8D6E63; color: white; }
+.accent { color: #FFC107; }
+.bg-light-custom { background-color: #F5F5F2; }
+.bg-dark-custom { background-color: #1B262C; color: #E0E0E0; }
+.material-symbols-outlined { font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24; }
+.card-hover:hover { transform: scale(1.05); transition: 0.3s; }
+
+/* mobile carousel styling */
+.mobile-carousel .carousel-inner {
+    padding: 0.5rem 0;
+}
+
+.mobile-carousel .card {
+    border-radius: 0.6rem;
+    overflow: hidden;
+    transition: transform 300ms ease, box-shadow 300ms ease;
+    box-shadow: 0 6px 18px rgba(16,34,22,0.08);
+}
+
+/* keep carousel items centered */
+.mobile-carousel .carousel-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* reduce product card image size on mobile */
+@media (max-width: 767.98px) {
+    .mobile-carousel .card {
+        max-width: 340px;
+    }
+    .mobile-carousel .card-img-top {
+        height: 180px;
+        object-fit: cover;
+        width: 100%;
+    }
+}
+
+/* hero text static (no animation) */
+#home .display-4,
+#home .lead {
+    opacity: 1;
+    transform: none;
+    transition: none;
+}
+
+/* navbar logo sizing and alignment */
+.navbar-brand {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.navbar-logo {
+    height: 44px;
+    width: 44px;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 6px;
+    box-shadow: 0 1px 4px rgba(0,0,0,0.12);
+    display: inline-block;
+}
+
+/* slightly smaller logo on very small screens */
+@media (max-width: 575.98px) {
+    .navbar-logo {
+        height: 34px;
+        width: 34px;
+    }
+    .navbar-brand .fs-4 { font-size: 1rem; line-height: 1; }
+}
+
+/* ---------- Hero layout adjustments: constrain content and ensure background fits ---------- */
+.hero-section {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat; /* prevent repeating */
+    min-height: 75vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;   /* remove extra spacing */
+    padding: 0;  /* remove section padding */
+}
+
+/* Constrain hero content and add internal padding */
+.hero-inner {
+    width: 100%;
+    max-width: 1200px;
+    padding: 3rem 1.5rem; /* slightly reduced padding */
+    box-sizing: border-box;
+    text-align: center;
+    background: rgba(0,0,0,0); /* keep transparent */
+    margin: 0 auto; /* center inner content */
+}
+
+
+/* tighter mobile sizing so text and buttons don't overflow */
+@media (max-width: 767.98px) {
+    .hero-section { min-height: 58vh; }
+    .hero-inner {
+        max-width: 94%;
+        padding: 2rem 1rem;
+    }
+}
